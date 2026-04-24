@@ -25,6 +25,7 @@
     OneSignalDeferred.push(async function(OneSignal) {
         await OneSignal.init({
             appId: OneSignal_appID,
+            allowLocalhostAsSecureOrigin: true,
         });
     });
 </script>
