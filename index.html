@@ -25,10 +25,13 @@
 
 
     <script>
+        
   window.OneSignalDeferred = window.OneSignalDeferred || [];
   OneSignalDeferred.push(async function(OneSignal) {
     await OneSignal.init({
-      appId: "6ab82d55-b65a-4b91-93c8-3d1cfa4f18a6",
+        appId: "6ab82d55-b65a-4b91-93c8-3d1cfa4f18a6",
+        serviceWorkerPath: "onepush/OneSignalSDKWorker.js",
+        serviceWorkerUpdaterPath: "onepush/OneSignalSDKUpdaterWorker.js",
       safari_web_id: "web.onesignal.auto.365cbfbd-b203-4342-b6f2-394fa1a1712a",
       notifyButton: {
         enable: true,
