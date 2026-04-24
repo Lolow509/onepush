@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
+
 </head>
 <body>
 
@@ -20,14 +21,20 @@
 
     const OneSignal_appID = "6ab82d55-b65a-4b91-93c8-3d1cfa4f18a6"
 
+</script>
 
-    window.OneSignalDeferred = window.OneSignalDeferred || [];
-    OneSignalDeferred.push(async function(OneSignal) {
-        await OneSignal.init({
-            appId: OneSignal_appID,
-            allowLocalhostAsSecureOrigin: true,
-        });
+
+    <script>
+  window.OneSignalDeferred = window.OneSignalDeferred || [];
+  OneSignalDeferred.push(async function(OneSignal) {
+    await OneSignal.init({
+      appId: "6ab82d55-b65a-4b91-93c8-3d1cfa4f18a6",
+      safari_web_id: "web.onesignal.auto.365cbfbd-b203-4342-b6f2-394fa1a1712a",
+      notifyButton: {
+        enable: true,
+      },
     });
+  });
 </script>
     
 </body>
