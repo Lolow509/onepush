@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
+</head>
+<body>
+
+    <input id="test_1" type="text">
+<button id="btn_test" onclick="envoyer()">Envoyer</button>
+
+<div id="text_test"></div>
+
+
+<script>
+
+    const api_key_push = "os_v2_app_nk4c2vnwljfzde6ihuoputyyuycmxypguewewxfdvt753co6sxtnmwwbhzba2xyg6kuy3fxjfrty7qoyo57grmk4knfbi7jdfziff4i"
+
+    const OneSignal_appID = "6ab82d55-b65a-4b91-93c8-3d1cfa4f18a6"
+
+
+    window.OneSignalDeferred = window.OneSignalDeferred || [];
+    OneSignalDeferred.push(async function(OneSignal) {
+        await OneSignal.init({
+            appId: OneSignal_appID,
+        });
+    });
+</script>
+    
+</body>
+</html>
